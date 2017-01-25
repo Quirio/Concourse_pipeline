@@ -1,24 +1,15 @@
+resources:
+- name: project-repository
+  type: git
+  source:
+    uri: https://github.com/Quirio/ansible-docker-role.git
+    branch: master
+
 jobs:
-- name: docker-ansible-rol 
+- name: building 
   public: true
   plan:
+  - get: project-repository
   - task: hello-world
-    config:
-      platform: linux
-      image_resource: 
-        type: docker-image
-        source: { repository: ubuntu}
-      run:
-        path: echo
-        args: [hello world]
-  - task: goodbye
-    config:
-      platform: linux
-      image_resource: 
-        type: docker-image
-        source: { repository: ubuntu}
-      run:
-        path: echo
-        args: [goodbye]
-
+    file: "tasks/main.yml"  
 
