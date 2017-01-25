@@ -5,6 +5,7 @@ image_resource:
   source: { repository: ubuntu }
 inputs:
 - name: project-repository
-  path: project-repository/.
+  path: .
 run:
   path: ls
+  args: [-l]
