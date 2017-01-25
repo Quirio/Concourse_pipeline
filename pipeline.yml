@@ -5,11 +5,18 @@ resources:
     uri: https://github.com/Quirio/ansible-docker-role.git
     branch: master
 
+- name: pipeline-repository
+  type: git 
+  source:
+    uri: https://github.com/Quirio/Concourse_pipeline.git
+    branch: master
+
 jobs:
 - name: building 
   public: true
   plan:
+  - get: pipeline-repository
   - get: project-repository
   - task: hello-world
-    file: "tasks/main.yml"  
+    file: pipeline-repository/task/build.yml
 
