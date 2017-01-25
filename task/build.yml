@@ -3,8 +3,7 @@ platform: linux
 image_resource:
   type: docker-image
   source:  
-    repository: ansible/ansible
-    tag: ubuntu1204 
+    repository: ansible/ubuntu14.04-ansible
   
 inputs:
 - name: project-repository
