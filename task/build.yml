@@ -10,4 +10,4 @@ inputs:
   path: /etc/ansible/roles/unir.kernel/
 run:
   path: ansible-playbook
-  args: [tests/test.yml] 
+  args: [/etc/ansible/roles/unir.kernel/tests/test.yml] 
