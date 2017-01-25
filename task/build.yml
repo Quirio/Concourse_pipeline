@@ -2,7 +2,7 @@ platform: linux
 
 image_resource:
   type: docker-image
-  source: { repository: ansible/ansible }
+  source: { repository: ansible }
 inputs:
 - name: project-repository
   path: .
