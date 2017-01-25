@@ -10,4 +10,4 @@ inputs:
   path: .
 run:
   path: ansible-playbook
-  args: [/tests/test.yml]
+  args: [tests/test.yml]
