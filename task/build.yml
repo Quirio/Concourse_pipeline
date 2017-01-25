@@ -10,5 +10,5 @@ inputs:
 - name: project-repository
   path: .
 run:
-  path: ls
-  args: [-l]
+  path: ansible
+  args: [--version]
