@@ -9,5 +9,5 @@ inputs:
 - name: project-repository
   path: .
 run:
-  path: ansible
-  args: [--version]
+  path: ansible-playbook
+  args: [/tests/test.yml]
