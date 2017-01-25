@@ -12,3 +12,4 @@ run:
   #path: ansible-playbook
   #args: [/etc/ansible/roles/unir.kernel/tests/test.yml] 
   path: ls
+  args: [/etc/ansible/roles/]
