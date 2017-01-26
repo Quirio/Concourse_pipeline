@@ -7,9 +7,9 @@ image_resource:
   
 inputs:
 - name: project-repository
-  path: /etc/ansible/roles/unir.kernel/
+  path: .
 run:
   #path: ansible-playbook
   #args: [/etc/ansible/roles/unir.kernel/tests/test.yml] 
-  path: ls
-  args: [/etc/ansible]
+  path: ansible-playbook 
+  args: [tests/test -i inventory]
