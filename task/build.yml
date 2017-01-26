@@ -10,4 +10,4 @@ inputs:
   path: .
 run:
   path: ls 
-  args: [-l] 
+  args: [-l tests] 
