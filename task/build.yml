@@ -12,4 +12,4 @@ run:
   #path: ansible-playbook
   #args: [/etc/ansible/roles/unir.kernel/tests/test.yml] 
   path: ansible-playbook 
-  args: [ansible-docker-role/tests/test -i inventory]
+  args: [tests/test.yml -i inventory]
