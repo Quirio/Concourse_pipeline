@@ -13,5 +13,5 @@ inputs:
   path: pipeline-repository
 
 run:
-  path: bash
-  args: [pipeline-repository/tests/build.sh] 
+  path: ls
+  #args: [pipeline-repository/tests/build.sh] 
