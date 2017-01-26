@@ -1,5 +1,6 @@
 platform: linux
 
+
 image_resource:
   type: docker-image
   source:  
@@ -7,7 +8,10 @@ image_resource:
   
 inputs:
 - name: project-repository
-  path: .
+  path: project-repository
+- name: pipeline-repository
+  path: pipeline-repository
+
 run:
   path: bash
-  args: [tests/build.sh] 
+  args: [pipeline-repository/tests/build.sh] 

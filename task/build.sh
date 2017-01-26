@@ -1,4 +1,4 @@
 #/bin/bash -e -x
 #
-mv tests/test.yml ../main.yml
-ansible-playbook main.yml
+mv project-repository/tests/test.yml ../../project-repository/main.yml
+ansible-playbook project-repository/main.yml
