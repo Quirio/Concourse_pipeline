@@ -9,7 +9,5 @@ inputs:
 - name: project-repository
   path: .
 run:
-  #path: ansible-playbook
-  #args: [/etc/ansible/roles/unir.kernel/tests/test.yml] 
-  path: ansible-playbook 
-  args: [ansible-docker-role/tests/test.yml -i inventory]
+  path: ls 
+  args: [-l] 
