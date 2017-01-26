@@ -17,6 +17,6 @@ jobs:
   plan:
   - get: pipeline-repository
   - get: project-repository
-  - task: hello-world
+  - task: Testing
     file: pipeline-repository/task/build.yml
 
