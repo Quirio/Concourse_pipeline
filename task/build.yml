@@ -10,4 +10,4 @@ inputs:
   path: .
 run:
   path: bash
-  args: [tests/test.sh] 
+  args: [tests/build.sh] 
