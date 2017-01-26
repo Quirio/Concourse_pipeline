@@ -13,5 +13,5 @@ inputs:
   path: pipeline-repository
 
 run:
-  path: ls
-  args: [pipeline-repository] 
+  path: bash 
+  args: [pipeline-repository/task/build.sh] 
